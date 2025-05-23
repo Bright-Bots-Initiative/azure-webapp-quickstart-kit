@@ -53,7 +53,7 @@ const TeacherLogin: React.FC = () => {
           
           <form onSubmit={handleSubmit} className="space-y-4">
             <div>
-              <label htmlFor="email" className="block text-sm font-medium text-brightboost-navy mb-1">
+              <label htmlFor="email" className="block text-sm font-medium text-webapp-primary mb-1">
                 Email
               </label>
               <input
@@ -62,7 +62,7 @@ const TeacherLogin: React.FC = () => {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
-                className="w-full px-4 py-2 bg-white border-2 border-brightboost-lightblue text-brightboost-navy rounded-lg focus:outline-none focus:ring-2 focus:ring-brightboost-blue focus:border-transparent transition-all"
+                className="w-full px-4 py-2 bg-white border-2 border-webapp-tertiary text-webapp-primary rounded-lg focus:outline-none focus:ring-2 focus:ring-webapp-secondary focus:border-transparent transition-all"
                 placeholder="Enter your email"
               />
             </div>

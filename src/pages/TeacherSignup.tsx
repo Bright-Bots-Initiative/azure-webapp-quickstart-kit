@@ -59,11 +59,11 @@ const TeacherSignup: React.FC = () => {
             <p className="text-lg text-webapp-primary mb-6">
               Share your knowledge and inspire the next generation
             </p>
-            <BrightBoostRobot className="hidden md:block" />
+            <AppMascot className="hidden md:block" />
           </div>
           
           <div className="game-card p-6 flex-1 w-full max-w-md">
-            <BrightBoostRobot className="md:hidden mx-auto mb-6" size="sm" />
+            <AppMascot className="md:hidden mx-auto mb-6" size="sm" />
             
             {error && (
               <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded-lg mb-4">
@@ -73,7 +73,7 @@ const TeacherSignup: React.FC = () => {
             
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>
-                <label htmlFor="name" className="block text-sm font-medium text-brightboost-navy mb-1">
+                <label htmlFor="name" className="block text-sm font-medium text-webapp-primary mb-1">
                   Full Name
                 </label>
                 <input
@@ -82,7 +82,7 @@ const TeacherSignup: React.FC = () => {
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   required
-                  className="w-full px-4 py-2 bg-white border-2 border-brightboost-lightblue text-brightboost-navy rounded-lg focus:outline-none focus:ring-2 focus:ring-brightboost-blue focus:border-transparent transition-all"
+                  className="w-full px-4 py-2 bg-white border-2 border-webapp-tertiary text-webapp-primary rounded-lg focus:outline-none focus:ring-2 focus:ring-webapp-secondary focus:border-transparent transition-all"
                   placeholder="Enter your full name"
                 />
               </div>

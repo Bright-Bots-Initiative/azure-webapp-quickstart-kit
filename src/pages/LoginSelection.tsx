@@ -20,20 +20,20 @@ const LoginSelection: React.FC = () => {
           <div className="grid grid-cols-1 gap-4">
             <Link
               to="/teacher/login"
-              className="button-shadow rounded-xl px-6 py-4 bg-brightboost-navy text-white font-bold text-center hover:bg-opacity-90 transition-all"
+              className="button-shadow rounded-xl px-6 py-4 bg-webapp-primary text-white font-bold text-center hover:bg-opacity-90 transition-all"
             >
               Teacher Login
             </Link>
             <Link
               to="/student/login"
-              className="button-shadow rounded-xl px-6 py-4 bg-brightboost-lightblue text-brightboost-navy font-bold text-center hover:bg-opacity-90 transition-all"
+              className="button-shadow rounded-xl px-6 py-4 bg-webapp-tertiary text-webapp-primary font-bold text-center hover:bg-opacity-90 transition-all"
             >
               Student Login
             </Link>
           </div>
           
           <div className="mt-6 text-center">
-            <Link to="/" className="text-brightboost-blue font-bold hover:underline transition-colors">
+            <Link to="/" className="text-webapp-secondary font-bold hover:underline transition-colors">
               Back to Home
             </Link>
           </div>

@@ -20,7 +20,7 @@ const SignupSelection: React.FC = () => {
           <div className="grid grid-cols-1 gap-4">
             <Link
               to="/teacher/signup"
-              className="button-shadow rounded-xl px-6 py-4 bg-brightboost-blue text-white font-bold text-center hover:bg-opacity-90 transition-all"
+              className="button-shadow rounded-xl px-6 py-4 bg-webapp-secondary text-white font-bold text-center hover:bg-opacity-90 transition-all"
             >
               Teacher Signup
             </Link>
