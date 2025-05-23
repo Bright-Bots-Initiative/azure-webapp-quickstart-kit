@@ -1,0 +1,79 @@
+name: Bicep Template Validation
+
+on:
+  push:
+    branches: [ main, dev ]
+    paths:
+      - 'infra/**/*.bicep'
+  pull_request:
+    branches: [ main, dev ]
+    paths:
+      - 'infra/**/*.bicep'
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Azure Login
+        uses: azure/login@v1
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+      
+      - name: Azure CLI script
+        uses: azure/CLI@v1
+        with:
+          inlineScript: |
+            echo "Validating Bicep templates..."
+            
+            # Validate main template
+            az deployment sub validate \
+              --location eastus \
+              --template-file infra/main.bicep \
+              --parameters env=dev projectName=validation
+            
+            # Validate individual module templates
+            for module in infra/modules/*.bicep; do
+              echo "Validating module: $module"
+              az deployment sub validate \
+                --location eastus \
+                --template-file $module \
+                --parameters env=dev projectName=validation
+            done
+            
+            echo "All Bicep templates validated successfully!"
+      
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          cache: 'npm'
+      
+      - name: Install dependencies
+        run: npm ci
+      
+      - name: Run linting
+        run: npm run lint
+      
+      - name: Run tests
+        run: npm run test
+  
+  secret-scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: TruffleHog OSS
+        uses: trufflesecurity/trufflehog@main
+        with:
+          path: ./
+          base: ${{ github.event.repository.default_branch }}
+          head: HEAD
+          extra_args: --debug --only-verified
