@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext';
 import { loginUser } from '../services/api';
 import GameBackground from '../components/GameBackground';
-import AppMascot from '../components/BrightBoostRobot';
+import AppMascot from '../components/AppMascot';
 
 const StudentLogin: React.FC = () => {
   const [email, setEmail] = useState('');

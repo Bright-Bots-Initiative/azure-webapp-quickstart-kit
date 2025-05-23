@@ -7,7 +7,7 @@ import GameBackground from '../components/GameBackground';
 import RobotCharacter from '../components/RobotCharacter';
 // import StemModuleCard, { ActivityProps as StemActivityDisplayProps } from '../components/StemModuleCard'; // Not used for activities currently
 import WordGameCard from '../components/WordGameCard'; // Assuming this is a static or separate feature
-import AppMascot from '../components/BrightBoostRobot';
+import AppMascot from '../components/AppMascot';
 import { Button } from '@/components/ui/button'; // For "Mark Complete"
 
 // Define types for fetched data (mirroring backend structure)
