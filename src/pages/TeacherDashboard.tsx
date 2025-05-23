@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext';
 import { useApi } from '../services/api'; // Import useApi
 import GameBackground from '../components/GameBackground';
-import BrightBoostRobot from '../components/BrightBoostRobot';
+import AppMascot from '../components/BrightBoostRobot';
 import Sidebar from '../components/TeacherDashboard/Sidebar';
 import MainContent from '../components/TeacherDashboard/MainContent';
 import { Lesson } from '../components/TeacherDashboard/types'; // Ensure this path is correct, might be '../TeacherDashboard/types'

@@ -7,7 +7,7 @@ import GameBackground from '../components/GameBackground';
 import RobotCharacter from '../components/RobotCharacter';
 // import StemModuleCard, { ActivityProps as StemActivityDisplayProps } from '../components/StemModuleCard'; // Not used for activities currently
 import WordGameCard from '../components/WordGameCard'; // Assuming this is a static or separate feature
-import BrightBoostRobot from '../components/BrightBoostRobot';
+import AppMascot from '../components/BrightBoostRobot';
 import { Button } from '@/components/ui/button'; // For "Mark Complete"
 
 // Define types for fetched data (mirroring backend structure)
@@ -102,7 +102,7 @@ const StudentDashboard: React.FC = () => {
     return (
       <GameBackground>
         <div className="min-h-screen flex flex-col relative z-10 items-center justify-center">
-          <BrightBoostRobot size="lg" />
+          <AppMascot size="lg" />
           <p className="text-xl text-brightboost-navy mt-4">Loading your dashboard...</p>
         </div>
       </GameBackground>
@@ -113,7 +113,7 @@ const StudentDashboard: React.FC = () => {
     return (
       <GameBackground>
         <div className="min-h-screen flex flex-col relative z-10 items-center justify-center p-4">
-          <BrightBoostRobot size="lg" />
+          <AppMascot size="lg" />
           <p className="text-xl text-red-500 mt-4 text-center">Error: {error}</p>
           <Button onClick={() => navigate('/')} className="mt-4">Go Home</Button>
         </div>
@@ -128,7 +128,7 @@ const StudentDashboard: React.FC = () => {
           <div className="container mx-auto flex justify-between items-center">
             <div className="flex items-center gap-3">
               <h1 className="text-xl font-bold">Bright Boost</h1>
-              <BrightBoostRobot size="sm" />
+              <AppMascot size="sm" />
             </div>
             <div className="flex items-center space-x-4">
               <div className="flex items-center gap-2 bg-brightboost-yellow px-3 py-1 rounded-full">

@@ -30,7 +30,7 @@ vi.mock('../../components/GameBackground', () => ({
   default: ({ children }) => <div data-testid="game-background">{children}</div>,
 }));
 
-vi.mock('../../components/BrightBoostRobot', () => ({
+vi.mock('../../components/AppMascot', () => ({
   default: () => <div data-testid="robot-icon">Robot</div>,
 }));
 

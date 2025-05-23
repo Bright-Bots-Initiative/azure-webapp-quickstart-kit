@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext';
 import { signupUser } from '../services/api';
 import GameBackground from '../components/GameBackground';
-import BrightBoostRobot from '../components/BrightBoostRobot';
+import AppMascot from '../components/BrightBoostRobot';
 
 const StudentSignup: React.FC = () => {
   const [name, setName] = useState('');
@@ -59,11 +59,11 @@ const StudentSignup: React.FC = () => {
             <p className="text-lg text-brightboost-navy mb-6">
               Start your learning adventure today!
             </p>
-            <BrightBoostRobot className="hidden md:block" />
+            <AppMascot className="hidden md:block" />
           </div>
           
           <div className="game-card p-6 flex-1 w-full max-w-md">
-            <BrightBoostRobot className="md:hidden mx-auto mb-6" size="sm" />
+            <AppMascot className="md:hidden mx-auto mb-6" size="sm" />
             
             {error && (
               <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded-lg mb-4">
