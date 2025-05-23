@@ -41,7 +41,7 @@ body {
 
 /* Game UI Elements */
 .game-card {
-  @apply bg-white rounded-xl shadow-lg border-2 border-brightboost-lightblue overflow-hidden transition-all duration-300 hover:shadow-xl hover:scale-[1.02];
+  @apply bg-white rounded-xl shadow-lg border-2 border-webapp-tertiary overflow-hidden transition-all duration-300 hover:shadow-xl hover:scale-[1.02];
 }
 
 .game-button {

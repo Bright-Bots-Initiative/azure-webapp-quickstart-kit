@@ -53,10 +53,10 @@ const StudentSignup: React.FC = () => {
       <div className="flex flex-col items-center justify-center min-h-screen p-4 relative z-10">
         <div className="flex flex-col md:flex-row items-center justify-center gap-6 w-full max-w-4xl">
           <div className="text-center md:text-left flex-1">
-            <h1 className="text-3xl md:text-4xl font-bold text-brightboost-navy mb-4">
+            <h1 className="text-3xl md:text-4xl font-bold text-webapp-primary mb-4">
               Join as a Student
             </h1>
-            <p className="text-lg text-brightboost-navy mb-6">
+            <p className="text-lg text-webapp-primary mb-6">
               Start your learning adventure today!
             </p>
             <AppMascot className="hidden md:block" />
@@ -73,7 +73,7 @@ const StudentSignup: React.FC = () => {
             
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>
-                <label htmlFor="name" className="block text-sm font-medium text-brightboost-navy mb-1">
+                <label htmlFor="name" className="block text-sm font-medium text-webapp-primary mb-1">
                   Full Name
                 </label>
                 <input
@@ -82,13 +82,13 @@ const StudentSignup: React.FC = () => {
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   required
-                  className="w-full px-4 py-2 bg-white border-2 border-brightboost-lightblue text-brightboost-navy rounded-lg focus:outline-none focus:ring-2 focus:ring-brightboost-blue focus:border-transparent transition-all"
+                  className="w-full px-4 py-2 bg-white border-2 border-webapp-tertiary text-webapp-primary rounded-lg focus:outline-none focus:ring-2 focus:ring-webapp-secondary focus:border-transparent transition-all"
                   placeholder="Enter your full name"
                 />
               </div>
               
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-brightboost-navy mb-1">
+                <label htmlFor="email" className="block text-sm font-medium text-webapp-primary mb-1">
                   Email
                 </label>
                 <input
@@ -97,13 +97,13 @@ const StudentSignup: React.FC = () => {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   required
-                  className="w-full px-4 py-2 bg-white border-2 border-brightboost-lightblue text-brightboost-navy rounded-lg focus:outline-none focus:ring-2 focus:ring-brightboost-blue focus:border-transparent transition-all"
+                  className="w-full px-4 py-2 bg-white border-2 border-webapp-tertiary text-webapp-primary rounded-lg focus:outline-none focus:ring-2 focus:ring-webapp-secondary focus:border-transparent transition-all"
                   placeholder="Enter your email"
                 />
               </div>
               
               <div>
-                <label htmlFor="password" className="block text-sm font-medium text-brightboost-navy mb-1">
+                <label htmlFor="password" className="block text-sm font-medium text-webapp-primary mb-1">
                   Password
                 </label>
                 <input
@@ -112,13 +112,13 @@ const StudentSignup: React.FC = () => {
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   required
-                  className="w-full px-4 py-2 bg-white border-2 border-brightboost-lightblue text-brightboost-navy rounded-lg focus:outline-none focus:ring-2 focus:ring-brightboost-blue focus:border-transparent transition-all"
+                  className="w-full px-4 py-2 bg-white border-2 border-webapp-tertiary text-webapp-primary rounded-lg focus:outline-none focus:ring-2 focus:ring-webapp-secondary focus:border-transparent transition-all"
                   placeholder="Create a password"
                 />
               </div>
               
               <div>
-                <label htmlFor="confirmPassword" className="block text-sm font-medium text-brightboost-navy mb-1">
+                <label htmlFor="confirmPassword" className="block text-sm font-medium text-webapp-primary mb-1">
                   Confirm Password
                 </label>
                 <input
@@ -127,7 +127,7 @@ const StudentSignup: React.FC = () => {
                   value={confirmPassword}
                   onChange={(e) => setConfirmPassword(e.target.value)}
                   required
-                  className="w-full px-4 py-2 bg-white border-2 border-brightboost-lightblue text-brightboost-navy rounded-lg focus:outline-none focus:ring-2 focus:ring-brightboost-blue focus:border-transparent transition-all"
+                  className="w-full px-4 py-2 bg-white border-2 border-webapp-tertiary text-webapp-primary rounded-lg focus:outline-none focus:ring-2 focus:ring-webapp-secondary focus:border-transparent transition-all"
                   placeholder="Confirm your password"
                 />
               </div>
@@ -135,8 +135,8 @@ const StudentSignup: React.FC = () => {
               <button
                 type="submit"
                 disabled={isLoading}
-                className={`button-shadow w-full py-3 px-4 rounded-xl text-brightboost-navy font-bold ${
-                  isLoading ? 'bg-brightboost-yellow/70' : 'bg-brightboost-yellow'
+                className={`button-shadow w-full py-3 px-4 rounded-xl text-webapp-primary font-bold ${
+                  isLoading ? 'bg-webapp-accent/70' : 'bg-webapp-accent'
                 } transition-colors`}
               >
                 {isLoading ? 'Signing up...' : 'Sign Up'}
@@ -144,14 +144,14 @@ const StudentSignup: React.FC = () => {
             </form>
             
             <div className="mt-6 text-center">
-              <p className="text-sm text-brightboost-navy">
+              <p className="text-sm text-webapp-primary">
                 Already have an account?{' '}
-                <Link to="/student/login" className="text-brightboost-blue font-bold hover:underline transition-colors">
+                <Link to="/student/login" className="text-webapp-secondary font-bold hover:underline transition-colors">
                   Log in
                 </Link>
               </p>
-              <p className="text-sm text-brightboost-navy mt-2">
-                <Link to="/" className="text-brightboost-blue font-bold hover:underline transition-colors">
+              <p className="text-sm text-webapp-primary mt-2">
+                <Link to="/" className="text-webapp-secondary font-bold hover:underline transition-colors">
                   Back to Home
                 </Link>
               </p>

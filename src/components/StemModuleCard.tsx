@@ -24,7 +24,7 @@ const StemModuleCard: React.FC<StemModuleCardProps> = ({
 }) => {
   return (
     <div className="game-card overflow-hidden">
-      <div className="bg-brightboost-lightblue text-brightboost-navy p-4 rounded-t-xl">
+      <div className="bg-webapp-tertiary text-webapp-primary p-4 rounded-t-xl">
         <h2 className="text-xl font-bold">{title}</h2>
         <p className="text-sm">{subtitle}</p>
       </div>

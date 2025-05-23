@@ -99,10 +99,10 @@ const TeacherDashboard: React.FC = () => {
   return (
     <GameBackground>
       <div className="min-h-screen flex flex-col relative z-10">
-        <nav className="bg-brightboost-navy text-white p-4 shadow-md">
+        <nav className="bg-webapp-primary text-white p-4 shadow-md">
           <div className="container mx-auto flex justify-between items-center">
             <div className="flex items-center gap-3">
-              <BrightBoostRobot size="sm" className="w-10 h-10" />
+              <AppMascot size="sm" className="w-10 h-10" />
               <h1 className="text-xl font-bold">Bright Boost</h1>
             </div>
             <div className="flex items-center space-x-4">
@@ -110,7 +110,7 @@ const TeacherDashboard: React.FC = () => {
               <span>Welcome, {user?.name || 'Teacher'}</span>
               <button
                 onClick={handleLogout}
-                className="bg-brightboost-blue px-3 py-1 rounded-lg hover:bg-brightboost-blue/80 transition-colors"
+                className="bg-webapp-secondary px-3 py-1 rounded-lg hover:bg-webapp-secondary/80 transition-colors"
               >
                 Logout
               </button>

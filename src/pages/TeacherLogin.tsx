@@ -39,10 +39,10 @@ const TeacherLogin: React.FC = () => {
       <div className="flex flex-col items-center justify-center min-h-screen p-4 relative z-10">
         <div className="game-card p-6 w-full max-w-md">
           <div className="flex items-center gap-2 mb-4">
-            <Link to="/login" className="text-brightboost-blue hover:text-brightboost-navy">
+            <Link to="/login" className="text-webapp-secondary hover:text-webapp-primary">
               <ArrowLeft className="h-5 w-5" />
             </Link>
-            <h1 className="text-2xl font-bold text-brightboost-navy">Teacher Login</h1>
+            <h1 className="text-2xl font-bold text-webapp-primary">Teacher Login</h1>
           </div>
           
           {error && (

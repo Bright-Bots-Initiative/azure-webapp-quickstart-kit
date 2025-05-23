@@ -7,7 +7,7 @@ interface GameBackgroundProps {
 
 const GameBackground: React.FC<GameBackgroundProps> = ({ children }) => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-brightboost-lightblue to-white overflow-hidden relative font-montserrat">
+    <div className="min-h-screen bg-gradient-to-b from-webapp-tertiary to-white overflow-hidden relative font-montserrat">
       {/* Add some clouds in the background */}
       <div className="absolute top-10 left-10 w-20 h-10 bg-white rounded-full opacity-70"></div>
       <div className="absolute top-20 left-40 w-32 h-16 bg-white rounded-full opacity-70"></div>

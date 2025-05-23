@@ -53,10 +53,10 @@ const TeacherSignup: React.FC = () => {
       <div className="flex flex-col items-center justify-center min-h-screen p-4 relative z-10">
         <div className="flex flex-col md:flex-row items-center justify-center gap-6 w-full max-w-4xl">
           <div className="text-center md:text-left flex-1">
-            <h1 className="text-3xl md:text-4xl font-bold text-brightboost-navy mb-4">
+            <h1 className="text-3xl md:text-4xl font-bold text-webapp-primary mb-4">
               Join as a Teacher
             </h1>
-            <p className="text-lg text-brightboost-navy mb-6">
+            <p className="text-lg text-webapp-primary mb-6">
               Share your knowledge and inspire the next generation
             </p>
             <BrightBoostRobot className="hidden md:block" />

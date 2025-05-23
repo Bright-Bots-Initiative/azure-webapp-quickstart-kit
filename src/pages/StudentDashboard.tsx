@@ -103,7 +103,7 @@ const StudentDashboard: React.FC = () => {
       <GameBackground>
         <div className="min-h-screen flex flex-col relative z-10 items-center justify-center">
           <AppMascot size="lg" />
-          <p className="text-xl text-brightboost-navy mt-4">Loading your dashboard...</p>
+          <p className="text-xl text-webapp-primary mt-4">Loading your dashboard...</p>
         </div>
       </GameBackground>
     );
@@ -124,20 +124,20 @@ const StudentDashboard: React.FC = () => {
   return (
     <GameBackground>
       <div className="min-h-screen flex flex-col relative z-10">
-        <nav className="bg-brightboost-lightblue text-brightboost-navy p-4 shadow-md">
+        <nav className="bg-webapp-tertiary text-webapp-primary p-4 shadow-md">
           <div className="container mx-auto flex justify-between items-center">
             <div className="flex items-center gap-3">
               <h1 className="text-xl font-bold">Bright Boost</h1>
               <AppMascot size="sm" />
             </div>
             <div className="flex items-center space-x-4">
-              <div className="flex items-center gap-2 bg-brightboost-yellow px-3 py-1 rounded-full">
+              <div className="flex items-center gap-2 bg-webapp-accent px-3 py-1 rounded-full">
                 <span className="text-sm font-bold">Level 1</span> {/* Static for now */}
                 <span className="text-xs bg-white px-2 py-0.5 rounded-full">{studentName}</span>
               </div>
               <button
                 onClick={handleLogout}
-                className="bg-brightboost-blue px-3 py-1 rounded-lg hover:bg-brightboost-blue/80 transition-colors text-white"
+                className="bg-webapp-secondary px-3 py-1 rounded-lg hover:bg-webapp-secondary/80 transition-colors text-white"
               >
                 Logout
               </button>
@@ -148,18 +148,18 @@ const StudentDashboard: React.FC = () => {
         <main className="container mx-auto p-4 flex-grow">
           <div className="flex flex-col md:flex-row items-start md:items-center justify-between mb-6 gap-4">
             <div>
-              <h2 className="text-2xl font-bold text-brightboost-navy">Hello, {studentName}!</h2>
-              <p className="text-brightboost-navy">Let's learn and have fun!</p>
+              <h2 className="text-2xl font-bold text-webapp-primary">Hello, {studentName}!</h2>
+              <p className="text-webapp-primary">Let's learn and have fun!</p>
             </div>
             <div className="flex gap-2"> {/* Static for now */}
-              <div className="badge bg-brightboost-blue text-white px-2 py-1 rounded-full text-xs">XP: 120/200</div>
-              <div className="badge bg-brightboost-yellow text-brightboost-navy px-2 py-1 rounded-full text-xs">Stars: 25</div>
+              <div className="badge bg-webapp-secondary text-white px-2 py-1 rounded-full text-xs">XP: 120/200</div>
+              <div className="badge bg-webapp-accent text-webapp-primary px-2 py-1 rounded-full text-xs">Stars: 25</div>
             </div>
           </div>
           
           {/* Display Enrolled Lessons */}
           <section className="mb-8">
-            <h3 className="text-xl font-semibold text-brightboost-navy mb-4">Your Lessons</h3>
+            <h3 className="text-xl font-semibold text-webapp-primary mb-4">Your Lessons</h3>
             {enrolledLessons.length > 0 ? (
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                 {enrolledLessons.map(lesson => (
@@ -178,7 +178,7 @@ const StudentDashboard: React.FC = () => {
 
           {/* Display Student Activities (mapped for StemModuleCard or custom display) */}
           <section>
-             <h3 className="text-xl font-semibold text-brightboost-navy mb-4">Your Activities</h3>
+             <h3 className="text-xl font-semibold text-webapp-primary mb-4">Your Activities</h3>
             {studentActivities.length > 0 ? (
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                  {/* Using a simplified card for activities for now */}

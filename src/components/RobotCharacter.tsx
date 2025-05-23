@@ -22,19 +22,19 @@ const RobotCharacter: React.FC<RobotCharacterProps> = ({
   
   const robotColors = {
     teacher: {
-      primary: '#46B1E6', // brightboost-blue
-      secondary: '#1C3D6C', // brightboost-navy
+      primary: '#46B1E6', // webapp-secondary
+      secondary: '#1C3D6C', // webapp-primary
       accent: '#FFC107' // amber
     },
     helper: {
-      primary: '#8BD2ED', // brightboost-lightblue
-      secondary: '#46B1E6', // brightboost-blue
-      accent: '#FF9C81' // brightboost-coral
+      primary: '#8BD2ED', // webapp-tertiary
+      secondary: '#46B1E6', // webapp-secondary
+      accent: '#FF9C81' // webapp-accent
     },
     friend: {
-      primary: '#FF9C81', // brightboost-coral
-      secondary: '#8BD2ED', // brightboost-lightblue
-      accent: '#46B1E6' // brightboost-blue
+      primary: '#FF9C81', // webapp-accent
+      secondary: '#8BD2ED', // webapp-tertiary
+      accent: '#46B1E6' // webapp-secondary
     }
   };
   

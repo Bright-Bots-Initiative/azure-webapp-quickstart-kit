@@ -64,7 +64,7 @@ const MainContent: React.FC<MainContentProps> = ({
 
   return (
     <div className="flex-grow p-6 ml-64"> {/* Ensure ml-64 matches sidebar width */}
-      <h2 className="text-2xl font-bold mb-6 text-brightboost-navy">{activeView}</h2>
+      <h2 className="text-2xl font-bold mb-6 text-webapp-primary">{activeView}</h2>
 
       {activeView === 'Lessons' && (
         <>

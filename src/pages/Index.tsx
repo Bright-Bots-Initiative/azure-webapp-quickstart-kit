@@ -9,11 +9,11 @@ const Index: React.FC = () => {
     <GameBackground>
       <div className="flex flex-col items-center justify-center min-h-screen p-4 relative z-10">
         <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-6xl font-bold text-brightboost-navy mb-2 drop-shadow-sm">
-            Bright Boost
+          <h1 className="text-4xl md:text-6xl font-bold text-webapp-primary mb-2 drop-shadow-sm">
+            Web App Quickstart
           </h1>
-          <p className="text-lg md:text-xl text-brightboost-navy">
-            Empowering young minds with technology skills
+          <p className="text-lg md:text-xl text-webapp-primary">
+            Empowering developers with Azure deployment tools
           </p>
         </div>
         

@@ -8,10 +8,10 @@ const LoginSelection: React.FC = () => {
     <GameBackground>
       <div className="flex flex-col items-center justify-center min-h-screen p-4">
         <div className="text-center mb-8">
-          <h1 className="text-3xl md:text-4xl font-bold text-brightboost-navy mb-2">
+          <h1 className="text-3xl md:text-4xl font-bold text-webapp-primary mb-2">
             Choose Login Type
           </h1>
-          <p className="text-lg text-brightboost-navy">
+          <p className="text-lg text-webapp-primary">
             Select how you'd like to login
           </p>
         </div>
